@@ -7,7 +7,7 @@ public class evenodd {
     public static void main(String[] args) {
         evenodd p1 = new evenodd();
         p1.value = p1.readValueFromUser();
-        p1.output=p1.valueIsEvenOROdd();
+        p1.output=p1.check();
         System.out.println(p1.output);
     }
 
@@ -21,7 +21,7 @@ public class evenodd {
         return value;
     }
 
-    boolean valueIsEvenOROdd() {
+    boolean check() {
         if (value % 2 == 0)
             return true;
         return false;
